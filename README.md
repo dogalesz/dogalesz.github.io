@@ -1,1 +1,1 @@
-szigma
+nem tudom
