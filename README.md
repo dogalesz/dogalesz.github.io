@@ -1,1 +1,1 @@
-# dogalesz.github.io
+szigma
