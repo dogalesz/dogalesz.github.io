@@ -1,50 +1,76 @@
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9f9fc;
+            color: #333;
+            line-height: 1.6;
         }
+
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        header {
-            background: url('header.jpg') no-repeat center center fixed;
-            background-size: cover;
-            color: white;
+            background: url('header.jpg') no-repeat center center;
+            background-size: cover;        color: white;
             padding: 2rem 0;
             text-align: center;
+            background-size: cover;
+            background-attachment: fixed;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         nav {
             text-align: center;
+            margin: 1rem 0;
         }
+
         nav a {
-              margin: 15px 15px 0 15px;
-              text-decoration: none;
-              color: #4CAF50;
-              font-weight: bold;
-              display: inline-block;
-           }
+            margin: 0 15px;
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
         nav a:hover {
+            color: #237727;
             text-decoration: underline;
         }
+
         ul {
             list-style-type: none;
             padding: 0;
             text-align: center;
         }
+
+        main {
+            padding: 2rem;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
         footer {
             background-color: #237727;
             color: white;
             border-top-left-radius: 10px;
-            border-top-right-radius: 10px;       text-align: center;
+            border-top-right-radius: 10px;
+            text-align: center;
             padding: 1rem 0;
             width: 100%;
             bottom: 0;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
         }
-        main {
-            padding: 2rem;
-            text-align: center;
+
+        @media (max-width: 768px) {
+            header, main, footer {
+                padding: 1rem;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
         }
