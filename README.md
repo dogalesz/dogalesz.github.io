@@ -4,6 +4,14 @@ Version 1.0.0 Release:
     Modified the site to just look better overall
     The site is now open to the public
 
+Version 1.0.1 Release:
+    Added new material to 9th grade
+    Made the home button white but only on the 9th grade page
+
+Version 1.1.0 Release:
+    Added night mode and day mode
+    Added buttons on all pages to change themes
+    Changed the index footer to the header image
 
 
 
@@ -19,7 +27,16 @@ Version 1.0.0 Release:
 
 
 
-a
+
+
+
+
+
+
+
+
+
+
 
 Amit kell csinálnom:
     Kémia radioaktivitás oldal
@@ -27,3 +44,4 @@ Amit kell csinálnom:
     Szépítés,  CSS átdolgozás
     Fordítás gomb
     Látogató számláló
+    Több téma
