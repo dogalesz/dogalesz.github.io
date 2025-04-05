@@ -13,6 +13,11 @@ Version 1.1.0 Release:
     Added buttons on all pages to change themes
     Changed the index footer to the header image
 
+Version 1.11.0 Release:
+    Added cherry blossom theme
+    Added new material to 9th grade
+    Cosmetic changes on all pages
+    
 
 
 

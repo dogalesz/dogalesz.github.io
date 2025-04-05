@@ -9,20 +9,21 @@ body {
 }
 
 header {
-    background: url('header.jpg') no-repeat center center;
+    background: var(--header-bg) no-repeat center center;
     background-size: cover;
     background-attachment: fixed;
     color: white;
     padding: 2rem 0;
     text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: var(--header-bg);
+    transition: background 0.5s ease;
 }
 
 nav {
     text-align: center;
     margin: 1rem 0;
     background-color: var(--nav-bg);
+    transition: background-color 0.3s;
 }
 
 nav a {
@@ -35,7 +36,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #237727;
+    color: var(--accent-color);
     text-decoration: underline;
 }
 
@@ -53,61 +54,17 @@ main {
     background: var(--bg-content);
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s;
 }
 
 footer {
-    background: url('header.jpg') no-repeat center center;
+    background: var(--footer-bg) no-repeat center center;
+    background-size: cover;
     color: white;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
     padding: 1rem 0;
-    width: 100%;
-    bottom: 0;
-    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.theme-switch {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    padding: 8px 12px;
-    background-color: var(--nav-bg);
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    color: var(--text-color);
-}
-
-/* Téma változók */
-:root {
-    --bg-color: #f9f9fc;
-    --bg-content: #ffffff;
-    --text-color: #333;
-    --header-bg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('header.jpg') no-repeat center center;
-    --link-color: #4CAF50;
-    --nav-bg: #ffffff;
-}
-
-[data-theme="dark"] {
-    --bg-color: #121212;
-    --bg-content: #1e1e1e;
-    --text-color: #e0e0e0;
-    --header-bg: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('header.jpg') no-repeat center center;
-    --link-color: #4dabf7;
-    --nav-bg: #2d2d2d;
-    --footer-bg: #002c00;
-}
-
-@media (max-width: 768px) {
-    header, main, footer {
-        padding: 1rem;
-    }
-
-    nav a {
-        display: block;
-        margin: 10px 0;
-    }
+    text-align: center;
+    position: relative;
+    transition: background 0.5s ease;
 }
 
 .theme-switch {
@@ -122,4 +79,66 @@ footer {
     color: var(--text-color);
     z-index: 1000;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: all 0.3s;
+}
+
+/* Theme Variables */
+:root {
+    /* Light Theme */
+    --bg-color: #f9f9fc;
+    --bg-content: #ffffff;
+    --text-color: #333;
+    --header-bg: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('headerlight.jpg');
+    --footer-bg: linear-gradient(rgba(35, 119, 39, 0.9), rgba(35, 119, 39, 0.9)), url('headerlight.jpg');
+    --link-color: #4CAF50;
+    --nav-bg: #ffffff;
+    --accent-color: #4CAF50;
+}
+
+[data-theme="dark"] {
+    /* Dark Theme */
+    --bg-color: #121212;
+    --bg-content: #1e1e1e;
+    --text-color: #e0e0e0;
+    --header-bg: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('headerdark.jpg');
+    --footer-bg: linear-gradient(rgba(18, 18, 18, 0.9), rgba(18, 18, 18, 0.9)), url('headerdark.jpg');
+    --link-color: #4dabf7;
+    --nav-bg: #2d2d2d;
+    --accent-color: #4dabf7;
+}
+
+[data-theme="cherry"] {
+    --bg-color: #fff0f5;
+    --bg-content: #ffe6ee;
+    --text-color: #5a2a42;
+    --header-bg: linear-gradient(rgba(255, 192, 203, 0.7), rgba(255, 182, 193, 0.7)), url('headercherry.jpg');
+    --footer-bg: linear-gradient(rgba(214, 51, 108, 0.7), rgba(214, 51, 108, 0.7)), url('headercherry.jpg');
+    --link-color: #d6336c;
+    --nav-bg: #ffc0cb;
+    --accent-color: #d6336c;
+}
+
+/* cherryblossom dekoracioi */
+[data-theme="cherry"] body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('cherry-blossom.jpg');
+    opacity: 0.05;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 1rem;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
 }
