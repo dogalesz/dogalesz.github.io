@@ -17,6 +17,9 @@ Version 1.11.0 Release:
     Added cherry blossom theme
     Added new material to 9th grade
     Cosmetic changes on all pages
+
+Version 1.11.1 Release:
+    App
     
 
 
