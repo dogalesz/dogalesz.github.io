@@ -20,6 +20,12 @@ Version 1.11.0 Release:
 
 Version 1.11.1 Release:
     App
+
+Version 1.11.2 Release:
+    Small CSS update
+    New header and footer image in cherry theme
+    Added new material to 9th grade
+    Insignificant change in index
     
 
 
