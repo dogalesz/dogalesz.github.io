@@ -26,6 +26,10 @@ Version 1.11.2 Release:
     New header and footer image in cherry theme
     Added new material to 9th grade
     Insignificant change in index
+
+Version 1.11.3 Release:
+    Added new material to 9th grade
+
     
 
 
