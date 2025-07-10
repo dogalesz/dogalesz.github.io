@@ -33,6 +33,10 @@ Version 1.11.3 Release:
 Version 1.11.4 Release:
     Added new material to 9th grade
     
+Version 1.11.5 Release:
+    Reworked the 10th grade webpage
+    Fixed an icon issue with the theme switcher
+    
 
 
 

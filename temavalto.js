@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // a gomb szövegének a frissítése a téma alapján
     function updateButtonText() {
         const theme = document.body.getAttribute('data-theme') || 'light';
-        const icons = { light: '🌙', dark: '☀️', cherry: '🌸' };
+        const icons = { light: '🌙', dark: '🌸', cherry: '☀️' };
         const texts = { light: 'Sötét téma', dark: 'Cseresznyvirág téma', cherry: 'Világos téma' };
         themeToggle.textContent = `${icons[theme]} ${texts[theme]}`;
     }
